@@ -30,4 +30,9 @@ public class JpaLordService implements LordService {
     public Set<LordWithoutPlanetsDTO> getAllLordsWithoutPlanets() {
         return lordRepository.findByPlanetsNull();
     }
+
+    @Override
+    public Set<LordWithoutPlanetsDTO> getTopTenMinAges() {
+        return lordRepository.findTop10ByOrderByAge();
+    }
 }

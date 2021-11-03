@@ -27,4 +27,8 @@ public class LordController {
     public Set<LordWithoutPlanetsDTO> getAllWithoutPlanets(){
         return lordService.getAllLordsWithoutPlanets();
     }
+    @GetMapping("/top10min")
+    public Set<LordWithoutPlanetsDTO> getTopTenMinAge(){
+       return lordService.getTopTenMinAges();
+    }
 }
