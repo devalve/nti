@@ -1,0 +1,50 @@
+[
+  {
+    "installed_rank": 1,
+    "version": "20211103095020",
+    "description": "init",
+    "type": "SQL",
+    "script": "V20211103095020__init.sql",
+    "checksum": 0,
+    "installed_by": "postgres",
+    "installed_on": "2021-11-03 10:59:32.389831",
+    "execution_time": 3,
+    "success": true
+  },
+  {
+    "installed_rank": 2,
+    "version": "20211103104428",
+    "description": "add lord table",
+    "type": "SQL",
+    "script": "V20211103104428__add_lord_table.sql",
+    "checksum": -1155716253,
+    "installed_by": "postgres",
+    "installed_on": "2021-11-03 10:59:32.412478",
+    "execution_time": 10,
+    "success": true
+  },
+  {
+    "installed_rank": 3,
+    "version": "20211103110009",
+    "description": "add planet table",
+    "type": "SQL",
+    "script": "V20211103110009__add_planet_table.sql",
+    "checksum": 276322255,
+    "installed_by": "postgres",
+    "installed_on": "2021-11-03 11:00:57.285909",
+    "execution_time": 29,
+    "success": true
+  },
+  {
+    "installed_rank": 4,
+    "version": "20211103114227",
+    "description": "add lord id",
+    "type": "SQL",
+    "script": "V20211103114227__add_lord_id.sql",
+    "checksum": -2117188220,
+    "installed_by": "postgres",
+    "installed_on": "2021-11-03 11:59:09.572240",
+    "execution_time": 19,
+    "success": true
+  }
+]

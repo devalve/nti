@@ -26,6 +26,7 @@ public class JpaLordService implements LordService {
     }
 
     @Override
+    @Transactional
     public Set<LordWithoutPlanetsDTO> getAllLordsWithoutPlanets() {
         return lordRepository.findByPlanetsNull();
     }
