@@ -16,8 +16,17 @@ public class Planet {
 
     private String title;
 
+    @Column(name = "lord_id")
+    private Integer lordId;
+
+    @ManyToOne
+    @JoinColumn(name = "lord_id", insertable = false, updatable = false)
+    private Lord lord;
+
+
     public Planet() {
     }
+
 
     public Planet(String title) {
         this.title = title;
