@@ -1,6 +1,7 @@
 package nti.controller;
 
 import nti.dto.planet.CreatePlanetDTO;
+import nti.dto.planet.EditPlanetLordIdDTO;
 import nti.service.PlanetService;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,5 +22,9 @@ public class PlanetController {
     @DeleteMapping
     public String deletePlanet(@RequestBody Integer id) {
         return planetService.deletePlanet(id);
+    }
+    @PutMapping
+    public  String updateLordId(@RequestBody EditPlanetLordIdDTO editPlanetLordIdDTO){
+        return planetService.editPlanetLordId(editPlanetLordIdDTO);
     }
 }

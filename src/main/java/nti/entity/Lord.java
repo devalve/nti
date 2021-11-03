@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -17,6 +18,9 @@ public class Lord {
     private String name;
 
     private Integer age;
+
+    @OneToMany(mappedBy = "lord")
+    Set<Planet> planets;
 
     public Lord(String name, Integer age) {
         this.name = name;
