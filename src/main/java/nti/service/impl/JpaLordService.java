@@ -1,7 +1,8 @@
 package nti.service.impl;
 
-import nti.dto.lord.CreateLordDTO;
+import nti.dto.lord.LordWithMinAgeDTO;
 import nti.dto.lord.LordWithoutPlanetsDTO;
+import nti.dto.lord.crud.CreateLordDTO;
 import nti.entity.Lord;
 import nti.repository.LordRepository;
 import nti.service.LordService;
@@ -32,7 +33,7 @@ public class JpaLordService implements LordService {
     }
 
     @Override
-    public Set<LordWithoutPlanetsDTO> getTopTenMinAges() {
+    public Set<LordWithMinAgeDTO> getTopTenMinAges() {
         return lordRepository.findTop10ByOrderByAge();
     }
 }

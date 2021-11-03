@@ -1,8 +1,8 @@
 package nti.controller;
 
-import nti.dto.lord.CreateLordDTO;
+import nti.dto.lord.LordWithMinAgeDTO;
+import nti.dto.lord.crud.CreateLordDTO;
 import nti.dto.lord.LordWithoutPlanetsDTO;
-import nti.entity.Lord;
 import nti.service.LordService;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,7 +28,7 @@ public class LordController {
         return lordService.getAllLordsWithoutPlanets();
     }
     @GetMapping("/top10min")
-    public Set<LordWithoutPlanetsDTO> getTopTenMinAge(){
+    public Set<LordWithMinAgeDTO> getTopTenMinAge(){
        return lordService.getTopTenMinAges();
     }
 }

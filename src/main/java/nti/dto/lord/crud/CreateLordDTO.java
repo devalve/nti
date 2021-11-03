@@ -1,4 +1,4 @@
-package nti.dto.lord;
+package nti.dto.lord.crud;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;

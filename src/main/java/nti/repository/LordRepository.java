@@ -1,5 +1,6 @@
 package nti.repository;
 
+import nti.dto.lord.LordWithMinAgeDTO;
 import nti.dto.lord.LordWithoutPlanetsDTO;
 import nti.entity.Lord;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -11,7 +12,7 @@ import java.util.Set;
 public interface LordRepository extends JpaRepository<Lord, Integer> {
     Set<LordWithoutPlanetsDTO> findByPlanetsNull();
 
-    Set<LordWithoutPlanetsDTO> findTop10ByOrderByAge();
+    Set<LordWithMinAgeDTO> findTop10ByOrderByAge();
 
 
 }
