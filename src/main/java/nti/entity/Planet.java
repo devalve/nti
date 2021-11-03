@@ -24,7 +24,6 @@ public class Planet {
     private Lord lord;
 
 
-
     public Planet() {
     }
 

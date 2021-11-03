@@ -20,7 +20,7 @@ public class Lord {
     private Integer age;
 
     @OneToMany(mappedBy = "lord")
-    Set<Planet> planets;
+    Set<Planet> planets ;
 
     public Lord(String name, Integer age) {
         this.name = name;
